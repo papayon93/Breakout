@@ -20,8 +20,15 @@ extern SDL_Surface* gScreenSurface;
 
 extern SDL_Surface* gJPGSurface;
 
+extern SDL_Renderer* gRenderer;
+
+extern SDL_Texture* gTexture;
+
 extern Mix_Chunk *gSonidoMoneda;
 extern Mix_Chunk *gSonidoSalto;
 extern Mix_Chunk *gSonidoVida;
+
+extern int Move_Right;
+extern int Move_Left;
 
 #endif

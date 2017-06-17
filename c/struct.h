@@ -7,6 +7,7 @@ typedef struct _Ball {
     int stepX;
     int stepY;
     SDL_Surface* image;
+    SDL_Texture* texture;
     int imgW;
     int imgH;
 } Ball;

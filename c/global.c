@@ -26,7 +26,17 @@ SDL_Surface* gScreenSurface = NULL;
 /*Current displayed PNG image*/
 SDL_Surface* gJPGSurface = NULL;
 
+//The window renderer
+SDL_Renderer* gRenderer = NULL;
+
+//Current displayed texture
+SDL_Texture* gTexture = NULL;
+
 /*The sound effects that will be used*/
 Mix_Chunk *gSonidoMoneda = NULL;
 Mix_Chunk *gSonidoSalto = NULL;
 Mix_Chunk *gSonidoVida = NULL;
+
+//Move Right and Left my Bar
+int Move_Right = 0;
+int Move_Left = 1;

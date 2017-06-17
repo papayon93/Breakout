@@ -18,11 +18,20 @@
 #include "struct.h"
 #include "global.h"
 
-void moveBall(Ball *p);
-Ball createBall( int posX, int posY, int stepX, int stepY, SDL_Surface *image);
 int init();
+
 int loadMedia();
+
 void closing();
+
 SDL_Surface* loadSurface( char *path);
+
+SDL_Texture* loadTexture( char *path );
+
+Ball createBall( int posX, int posY, int stepX, int stepY, SDL_Surface *image, SDL_Texture *texture);
+
+void moveBall(Ball *p);
+
+void moveControl(Ball *p, int Key);
 
 #endif
